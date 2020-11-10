@@ -1,0 +1,89 @@
+<html>
+<head>
+<style>
+body {
+  padding: 20px 0;
+}
+
+.total_container {
+  width:1000px;
+  margin:auto;
+  display:flex;
+  background:black;
+  padding:50px;
+}
+.container {
+  border: 3px solid black;
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  -o-user-select: none;
+  user-select: none;
+}
+.insideText {
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background:white;
+}
+
+.after-scratch {
+  display:none;
+  width: 1000px;
+  margin: auto;
+  padding: 10px;
+  background: white;
+  border: 40px solid black;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+}
+
+.form {
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<!--
+https://github.com/andreruffert/scratchie.js
+-->
+
+<div class="total_container">
+  <div class="container" id="js-container-0">
+    <canvas class="canvas" id="js-canvas-0" width="300" height="100"></canvas>
+    <div class="insideText"><h3>Rectangle 1</h3></div>  
+  </div>
+
+  <div class="container" id="js-container-1">
+    <canvas class="canvas" id="js-canvas-1" width="300" height="100"></canvas>
+    <div class="insideText"><h3>Rectangle 2</h3></div>  
+  </div>
+
+  <div class="container" id="js-container-2">
+    <canvas class="canvas" id="js-canvas-2" width="300" height="100"></canvas>
+    <div class="insideText"><h3>Rectangle 3</h3></div>  
+  </div>
+</div>
+
+
+<div class="after-scratch">
+  <h3>Scratch has been completed!</h3>
+  <p>Show something here.</p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
