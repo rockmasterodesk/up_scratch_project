@@ -27,6 +27,9 @@
     isDrawing = false;
   }
 
+  document.addEventListener('mouseup', handleMouseUp, false);
+  document.addEventListener('touchend', handleMouseUp, false);
+
 
   // Rectangle 1
   {
